@@ -7,7 +7,10 @@ interface RootLayoutProps {
   children: React.ReactNode;
 }
 
-const inter = Inter()
+const inter = Inter({
+  subsets: ['latin'], 
+  preload: true,
+});
 export const metadata: Metadata = {
   title: "Strayapay",
   description: "a payment gateway for all",
